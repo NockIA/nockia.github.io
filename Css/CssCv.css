@@ -1,0 +1,413 @@
+@keyframes rotate {
+    0% {
+      transform: rotate3d(0, 0, 1, 0deg);
+    }
+    100% {
+      transform: rotate3d(0, 0, 1, 360deg);
+    }
+  }
+
+/*--------------------Querys--------------------*/
+@media only screen and ( max-width: 700px ) {
+    .containerBody{
+        flex-direction: column;
+    }
+    .containerName{
+        margin: 1rem;
+        border-radius: 30px;
+    }
+    .basicRowContainer{
+        justify-content: center;
+        gap: 3rem;
+    }
+    .containerUnderline{
+        margin-top: -0.5rem;
+        padding-bottom: 0.5rem;
+    }
+    .containerGlobalLink{
+        flex-direction: row;
+        font-family: monospace;
+        gap: 3rem;
+    }
+    .containerLink{
+        margin-left: 0.5rem;
+        margin-top: -1rem;
+        letter-spacing: 0.2rem;
+    }
+    .containerDescription{
+        padding: 1rem;
+        margin: 0.5rem;
+        border-radius: 15px;
+    }
+    .linkedinLinkImg{
+        width: 3rem;
+        height: 3rem;
+    }
+    .githubLinkImg{
+        width: 3rem;
+        height: 3rem;
+        border-radius: 100%;
+    }
+    .triangle{
+        display: none;
+    }
+    .contactLink{
+        text-align: center;
+    }
+    .underline{
+        width: 2rem;
+    }
+    .gapDesktop{
+        gap: 7rem;
+    }
+    .containerCard{
+        margin: 1rem;
+    }
+    .contentMoreInfo{
+        margin-bottom: 1rem;
+    }
+    .buttonMoreInfo{
+        margin-bottom: 1rem;
+    }
+    #h2Link{
+        color: white;
+    }
+    #phoneNumberMargin{
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and ( min-width: 700px ) {
+    .containerBody{
+        flex-direction: row;
+    }
+    .containerGlobal{
+        width: 58rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .containerName{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding-right: 2rem;
+        padding-left: 2rem;
+        font-size: 1.75rem;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    .containerUnderline{
+        margin-top: -2rem;
+        padding-bottom: 2rem;
+    }
+    .containerGlobalLink{
+        flex-direction: column;
+        width: 6.5rem;
+        gap: 10rem;
+        border-top-left-radius: 15px;
+        border-end-end-radius: 10px;
+        background-color: white;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .basicRowContainer{
+        margin-top: 0rem;
+        gap: 1rem;
+    }
+    .containerCard{
+        margin: 1.5rem;
+    }
+    .containerInformations{
+        gap: 3.45rem;
+    }
+    .containerLink{
+        gap: 2rem;
+        letter-spacing: 0.2rem;
+        color: rgb(43, 43, 43);
+    }
+    .containerDescription{
+        padding: 1rem;
+        padding-left: 2rem;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 15px;
+    }
+    .linkedinLinkImg{
+        width: 3rem;
+        height: 3rem;
+        margin-bottom: 1.5rem;
+    }
+    .githubLinkImg{
+        width: 4rem;
+        height: 4rem;
+        margin-top: -2rem;
+        border-radius: 100%;
+    }
+    .underline{
+        width: 20rem;
+    }
+    .titleInformation{
+        z-index: 1;
+        margin-left: -6.5rem;
+        margin-right: 3rem;
+        clip-path: polygon(4% 0%, 100% 0%, 100% 100%, 4% 100%); 
+    }
+    .contentMoreInfo{
+        margin-bottom: -1rem;
+    }
+    #h2Link{
+        rotate: 90deg;
+        color: rgb(43, 43, 43);
+    }
+    #hide{
+        display: none;
+    }
+    #phoneNumberMargin{
+        margin-top: 1.5rem;
+    }
+}
+/*--------------------Querys--------------------*/
+
+body{
+    background: wheat;
+}
+
+.containerGlobal{
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    font-family: monospace;
+    background-color: rgb(43, 43, 43);
+}
+
+/*--------------------Header--------------------*/
+
+.containerHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.containerCard{
+    height: 12rem;
+    padding: 1rem;
+    border-radius: 15px;
+    clip-path: polygon(49% 75%, 100% 100%, 100% 0, 0 0, 0 100%);
+    background-color: burlywood;
+}
+
+.containerName{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    align-items: center;
+    background-color: burlywood;
+    color: white;
+    text-shadow:rgb(43, 43, 43) 1px 0 10px; 
+}  
+
+.containerUnderline{
+    display: flex;
+    flex-direction: row;
+    gap: 0rem;
+}
+
+.profilePicture{
+    width: 8rem;
+    height: 8rem;
+    border-radius: 999px    ;
+    border: 5px solid rgb(43, 43, 43);
+    background-color: rgb(43, 43, 43);
+}
+
+.underline{
+    height: 0.3rem;
+    margin-top: 0.35rem;
+    background-color: white;
+    box-shadow:rgb(43, 43, 43) 1px 0 10px; 
+}
+
+.stylePoint{
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: white;
+    box-shadow:rgb(43, 43, 43) 1px 0 10px; 
+}
+
+/*--------------------Header--------------------*/
+
+/*--------------------Body--------------------*/
+
+.containerBody{
+    display: flex;
+}
+    /*--------------------Description--------------------*/
+
+    .containerDescription{
+        background-color: white;
+    }
+
+    .containerDescriptionTitle{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        color: rgb(43, 43, 43);
+    }
+
+    .pointTitle{
+        width: 1.75rem;
+        height: 1.75rem;
+        margin: 1.25rem;
+        border-radius: 50%;
+        background-color: rgb(43, 43, 43);
+    }
+
+    .underlineTitle{
+        height: 0.35rem;
+        width: 15rem;
+        margin-top: -0.89rem;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        border-radius: 999px;
+        background-color: rgb(43, 43, 43);
+    }
+
+    .text{
+        padding-right: 1.5rem;
+        margin-left: 1rem;
+        text-indent: 2rem;
+        font-size: 1rem;
+        font-weight:500 ;
+        line-height: 1.2rem;
+    }
+
+    /*--------------------Description--------------------*/
+
+    /*--------------------Information--------------------*/
+
+    .containerInformations{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .containerComponent{
+        display: flex;
+        flex-direction: column;
+        margin: 3rem;
+    }
+
+    .containerEmojis{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        row-gap: 0rem;
+        gap: 0.40rem;
+        color: white;
+    }
+
+    .basicRowContainer{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -2rem;
+    }
+
+    .moreInfoContainer {
+        color: white;
+        text-align: center;
+        margin-bottom: -5rem;
+    }
+
+    .elementNames{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: white;
+    }
+
+    .titleInformation{
+        text-align: center;
+        margin-top: -0.5rem;
+        padding: 1rem; 
+        border-radius: 15px;
+        color: white;
+        text-shadow:rgb(43, 43, 43) 1px 0 10px; 
+        background-color: burlywood;
+    }
+
+    .contactLink{
+        font-size: 1rem;
+        color: white;
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .triangle{
+        width: 3rem;
+        height: 48px;
+        margin-left: -5.8rem;
+        margin-right: 0px ;
+        margin-top: -1.12rem;
+        background-color : rgb(43, 43, 43);
+        clip-path: polygon(100% 0, 0 0, 100% 100%);
+    }
+
+    .moreInformation{
+        display: none;
+        margin-top: 3rem;
+        margin-bottom: -3rem;
+        font-family: monospace;
+        color: white;
+    }
+ 
+    .buttonMoreInfo {
+        margin-top: 3.5rem;
+        padding: 0.5rem;
+        border: 3px solid white;
+        border-radius: 999px;
+        cursor: pointer;
+        font-family: monospace;
+        background: transparent;
+        color: white;
+    }
+     
+    .contentMoreInfo {
+        display: none;
+        margin-top: 1.5rem;
+    }
+
+    /*--------------------Information--------------------*/
+
+    /*--------------------Links--------------------*/
+
+    .containerGlobalLink{
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+
+    .containerLink{    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .linkedinLinkImg{
+        border-radius: 100%;
+        filter: grayscale(100%);
+    }
+
+    .githubLinkImg:hover{
+        animation: rotate 1.5s normal ease-in-out;
+    }
+    .linkedinLinkImg:hover{
+        animation: rotate 1.5s normal ease-in-out;
+    }
+
+    /*--------------------Links--------------------*/
+
+/*--------------------Body--------------------*/
